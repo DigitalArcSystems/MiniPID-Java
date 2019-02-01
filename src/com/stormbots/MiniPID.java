@@ -98,10 +98,10 @@ public class MiniPID{
 	 * @param i New gain value for the Integral term
 	 */
 	public void setI(double i){
-		if(I!=0){
+		if(i!=0){
 			errorSum=errorSum*I/i;
 			}
-		if(maxIOutput!=0){
+		if(i!=0){
 			maxError=maxIOutput/i;
 		}
 		I=i;
